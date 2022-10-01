@@ -135,7 +135,7 @@ $(document).on('keypress', 'input,select', function(e) {
             alert('Name and score must have values');
             return;
         }
-        if (score.val() <= 0 || score.val() >= 100){
+        if (score.val() <= 0 || score.val() > 100){
             alert('You must enter a valid score between 0 to 100');
             return;
         }
