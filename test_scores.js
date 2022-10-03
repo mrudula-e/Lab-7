@@ -38,6 +38,8 @@ function initializeResults() {
 
 function displayScores() {
     // Add your code here
+	 let scores = $('#scores');
+    scores.toggle();
 
 var str = "<table>";
 
@@ -146,8 +148,8 @@ $(document).on('keypress', 'input,select', function(e) {
         score.val('');
         name.val('');
         initializeResults();
-        $('#scores').show();
-        $('#results').show();
+        //$('#scores').show();
+       // $('#results').show();
         }
         
     }
